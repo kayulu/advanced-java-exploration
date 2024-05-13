@@ -1,17 +1,17 @@
 package com.kayulu;
 
 import java.time.LocalTime;
-import java.util.function.BiPredicate;
-import java.util.function.DoubleSupplier;
-import java.util.function.Predicate;
-import java.util.function.Supplier;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.function.*;
 
 public class Predifined_FI {
     public static void main(String[] args) {
         Predifined_FI pFI = new Predifined_FI();
 
 //        pFI.predicate();
-        pFI.supplier();
+//        pFI.supplier();
+        pFI.consumer();
     }
 
     // Note: a Predicate takes one or more arguments and returns a boolean regarding a
@@ -39,4 +39,21 @@ public class Predifined_FI {
         DoubleSupplier doubleSupplier = Math::random;
         System.out.println("Double Supplier: " + doubleSupplier.getAsDouble());
     }
+
+    // Note: a consumer, as the name suggests takes an argument and does not return a value
+    public void consumer() {
+        Consumer<String> consumer = System.out::println;
+        consumer.accept("Hello Consumer");
+
+        // BiConsumer<T, U> takes in two args
+        BiConsumer<List<String>, String> biConsumer = (l, s) -> l.add(s.toUpperCase());
+        List<String> names = new ArrayList<>();
+
+        biConsumer.accept(names, "kayhan");
+        biConsumer.accept(names, "serap");
+        biConsumer.accept(names, "selma");
+
+        names.forEach(System.out::println);
+    }
+
 }
