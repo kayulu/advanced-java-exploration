@@ -11,7 +11,8 @@ public class Predifined_FI {
 
 //        pFI.predicate();
 //        pFI.supplier();
-        pFI.consumer();
+//        pFI.consumer();
+        pFI.function();
     }
 
     // Note: a Predicate takes one or more arguments and returns a boolean regarding a
@@ -54,6 +55,20 @@ public class Predifined_FI {
         biConsumer.accept(names, "selma");
 
         names.forEach(System.out::println);
+    }
+
+    // Note: a Function simply takes an argument and returns a value
+    public void function() {
+        // Function<T, R>
+        Function<String, Integer> fn1 = String::length;
+        System.out.println(fn1.apply("Kayhan"));
+
+        // Function<T, U, R>
+        BiFunction<String, String, Integer> fn2 = (s1, s2) -> s1.length() + s2.length();
+        System.out.println(fn2.apply("Kayhan", "Uludemirciler"));
+
+        BiFunction<String, String, String> fn3 = String::concat;
+        System.out.println(fn3.apply("William ", "Shakespear"));
     }
 
 }
