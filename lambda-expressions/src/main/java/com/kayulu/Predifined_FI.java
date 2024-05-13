@@ -12,7 +12,8 @@ public class Predifined_FI {
 //        pFI.predicate();
 //        pFI.supplier();
 //        pFI.consumer();
-        pFI.function();
+//        pFI.function();
+        pFI.operator();
     }
 
     // Note: a Predicate takes one or more arguments and returns a boolean regarding a
@@ -71,4 +72,14 @@ public class Predifined_FI {
         System.out.println(fn3.apply("William ", "Shakespear"));
     }
 
+    // Note an Operator takes a value and returns a value of the same type
+    public void operator() {
+        // UnaryOperator<T, T> extends Function<T, T>
+        UnaryOperator<Integer> unaryOperator = v -> v + 1;
+        System.out.println(unaryOperator.apply(1));
+
+        // BinaryOperator<T> extends BiFunction<T, T, T>
+        BinaryOperator<String> binaryOperator = String::concat; // (s1, s2) -> s1.concat(s2)
+        System.out.println(binaryOperator.apply("Kay ", "Ulu"));
+    }
 }
