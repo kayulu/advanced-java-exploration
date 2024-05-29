@@ -6,8 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="lambda-expressions" />
+        <module name="advanced-java-exploration" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="lambda-expressions" target="17" />
+      <module name="streams" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>

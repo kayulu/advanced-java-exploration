@@ -1,4 +1,4 @@
-package com.kayulu.assignment_2;
+package com.kayulu.lambda.assignment_2;
 
 import java.util.*;
 import java.util.function.*;

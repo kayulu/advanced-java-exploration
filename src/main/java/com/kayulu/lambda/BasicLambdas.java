@@ -1,4 +1,4 @@
-package com.kayulu;
+package com.kayulu.lambda;
 
 @FunctionalInterface
 interface I {

@@ -1,4 +1,4 @@
-package com.kayulu.assignment_1;
+package com.kayulu.lambda.assignment_1;
 
 @FunctionalInterface
 public interface Evaluate<T> {
