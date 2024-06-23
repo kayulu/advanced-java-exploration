@@ -1,4 +1,4 @@
-package com.kayulu.annotations;
+package com.kayulu.java11.annotations;
 
 // While java.lang is automatically imported, java.lang.annotation is not.
 import java.lang.annotation.ElementType;

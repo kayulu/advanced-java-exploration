@@ -1,4 +1,4 @@
-package com.kayulu.annotations;
+package com.kayulu.java11.annotations;
 
 // Example - "value" element for shorthand
 @interface Team{

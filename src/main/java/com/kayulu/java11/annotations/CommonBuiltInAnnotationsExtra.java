@@ -1,4 +1,4 @@
-package com.kayulu.annotations;
+package com.kayulu.java11.annotations;
 
 import java.util.ArrayList;
 import java.util.Arrays;

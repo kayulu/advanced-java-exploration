@@ -1,4 +1,4 @@
-package com.kayulu.annotations;
+package com.kayulu.java11.annotations;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

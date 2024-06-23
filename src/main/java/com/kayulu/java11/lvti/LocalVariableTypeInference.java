@@ -1,4 +1,4 @@
-package com.kayulu.lvti;
+package com.kayulu.java11.lvti;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.kayulu.annotations;
+package com.kayulu.java11.annotations;
 
 enum Device {LAPTOP, PHONE};
 

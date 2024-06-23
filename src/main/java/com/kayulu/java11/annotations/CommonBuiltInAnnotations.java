@@ -1,4 +1,4 @@
-package com.kayulu.annotations;
+package com.kayulu.java11.annotations;
 
 // 1. @Override - Person
 //      a) commented out - Object::toString() called

@@ -1,4 +1,4 @@
-package com.kayulu.privIntMeth;
+package com.kayulu.java11.privIntMeth;
 
 /*
 Private methods in interfaces, introduced in Java 11, allow you to encapsulate and reuse code within an interface.
