@@ -9,9 +9,6 @@
         <module name="advanced-java-exploration" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="lambda-expressions" target="17" />
-      <module name="streams" target="17" />
-    </bytecodeTargetLevel>
+    <bytecodeTargetLevel target="21" />
   </component>
 </project>
